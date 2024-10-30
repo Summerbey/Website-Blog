@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Technologies Professionalism Coursework</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"></div>
+                Summer's Blog
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="contact-container">
+        <header class="contact-header">
+            <h1>Get in Touch</h1>
+            <p>Let's connect and create amazing things together</p>
+        </header>
+
+        <div class="contact-grid">
+            <div class="contact-form-container">
+                <form class="contact-form" action="submit_form.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <div class="contact-links">
+                    <a href="mailto:B00477047@studentmail.uws.ac.uk" class="contact-link">
+                        <i class="fas fa-envelope"></i>
+                        B00477047@studentmail.uws.ac.uk
+                    </a>
+                    <a href="https://github.com/Summerbey" class="contact-link">
+                        <i class="fab fa-github"></i>
+                        GitHub Profile
+                    </a>
+                    <a href="https://www.linkedin.com/in/summer-rhoda-107893146/" class="contact-link">
+                        <i class="fab fa-linkedin"></i>
+                        LinkedIn Profile
+                    </a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/Summerbey" class="social-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/summer-rhoda-107893146/" class="social-link" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.facebook.com/Alexia.Darling?checkpoint_src=any" class="social-link" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+
+                <div class="additional-info">
+                    <h3>Office Hours</h3>
+                    <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                    <p>Weekend: By Appointment</p>
+                    
+                    <h3>Location</h3>
+                    <p>University of the West of Scotland</p>
+                    <p>High Street, Paisley PA1 2BE</p>
+                    <p>United Kingdom</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-widget">
+            <div class="chat-header">
+                <h3>Live Chat</h3>
+                <p>Usually replies within an hour</p>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chatInput" placeholder="Type your message...">
+                <button id="sendMessage">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <a href="index.html">Home</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <ul>
+                    <a href="https://github.com/Summerbey">GitHub</a></li>
+                    <a href="https://www.linkedin.com/in/summer-rhoda-107893146/">LinkedIn</a>
+                    <a href="https://www.facebook.com/Alexia.Darling">Facebook</a>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 DevPortfolio. All rights reserved. | B00477047</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
