@@ -7,6 +7,17 @@ window.addEventListener('scroll', () => {
     }
 });
 
+{
+    document.querySelectorAll('.expand-post').forEach(button => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            const post = button.closest('.blog-post');
+            post.classList.toggle('expanded');
+            button.textContent = post.classList.contains('expanded') ? 'show less' : 'Read More';
+        })
+    })
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.querySelector('.contact-form');
     if (contactForm) {
@@ -24,5 +35,28 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth'
         });
+    });
+});
+
+const sidebar = document.querySelector('.sidebar');
+if (sidebar) {
+    const sidebarToggle = document.querySelector('.sidebar-toggle');
+    if (sidebarToggle) {
+        sidebarToggle.addEventListener('click', () => {
+            sidebar.checkList.toggle('visible');
+        });
+    }
+}
+
+const sidebarLinks = sidebar.querySelectorAll('a[href^="#"]');
+sidebarLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetID = link.getAttribute('href').slice(1);
+        const targetElement = document.getElementById(targetID);
+
+        if (targetElement) {
+            targetElement.scrollIntoView({behavior: 'smooth'});
+        }
     });
 });
